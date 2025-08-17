@@ -5,7 +5,7 @@
 using namespace std;
 int main(){
 
-    vector<int> arr = {1, 2, 3, 50000, 99999, 50000}; // Example array with one duplicate
+    vector<int> arr = {3, 1, 3, 4, 2}; 
     int n = arr.size();
     sort(arr.begin(), arr.end()); // Sort the array
     int dup =-1;
@@ -16,7 +16,7 @@ int main(){
         }
     }
     cout<< "The duplicate element is: " << dup << endl;
-    // Output: The duplicate element is: 3
+    
     if(dup == -1) {
         cout << "No duplicate found." << endl;
     }
